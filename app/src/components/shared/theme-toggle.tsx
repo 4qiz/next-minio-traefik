@@ -25,15 +25,15 @@ export default function ThemeToggle() {
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           <Icons.sun className="mr-2 size-4" />
-          <span>حالت روشن</span>
+          <span>Светлая</span>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
           <Icons.moon className="mr-2 size-4" />
-          <span>حالت تیره</span>
+          <span>Тёмная</span>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
           <Icons.laptop className="mr-2 size-4" />
-          <span>حالت سیستم</span>
+          <span>Системная</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

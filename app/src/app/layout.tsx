@@ -12,8 +12,9 @@ export default async function RootLayout({
     <html className="antialiased" suppressHydrationWarning={true}>
       <body className={"overflow-hidden"}>
         <NextTopLoader showSpinner={false} />
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Toaster />
+
           <div className="flex h-screen flex-col items-center justify-center">
             {children}
           </div>

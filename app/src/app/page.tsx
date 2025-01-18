@@ -1,32 +1,29 @@
-import PageContainer from "~/components/layout/page-container";
-
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "~/components/ui/card";
-import { CogIcon, Link2Icon, ProjectorIcon, ViewIcon } from "lucide-react";
-import prisma from "~/lib/server/prisma";
-import ProfileCreateForm from "./_components/upload-form";
+import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import UploadGallery from "./_components/upload-gallery";
 import { ScrollArea } from "~/components/ui/scroll-area";
+import ThemeToggle from "~/components/shared/theme-toggle";
+import UploadForm from "./_components/upload-form";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export default async function OverViewPage() {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="flex flex-col gap-3 md:max-w-4xl">
       <Card className="col-span-1 h-fit">
-        <CardHeader>Upload</CardHeader>
+        <CardHeader>
+          <div className="flex flex-row items-center justify-between">
+            <CardTitle>Upload</CardTitle> <ThemeToggle />
+          </div>
+        </CardHeader>
         <CardContent>
-          <ProfileCreateForm />
+          <UploadForm />
         </CardContent>
       </Card>
-      <Card className="col-span-2 max-h-[66vh] min-h-[33vh] max-w-[50vw]">
+      <Card className="">
         <ScrollArea className="h-full">
-          <CardHeader>Gallery</CardHeader>
+          <CardHeader>
+            <CardTitle>Gallery</CardTitle>
+          </CardHeader>
           <CardContent>
             <UploadGallery />
           </CardContent>
