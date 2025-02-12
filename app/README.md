@@ -31,10 +31,4 @@ Save time and effort, and build performant apps with an excellent developer expe
 3. Make changes and commit.
 4. Push and create a pull request.
 
-## License 📄
 
-[MIT License](https://github.com/moinulmoin/Boot/blob/main/LICENSE)
-
-## Author ✍️
-
-Moinul Moin ([@immoinulmoin](https://twitter.com/immoinulmoin))
